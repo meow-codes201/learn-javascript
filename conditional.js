@@ -31,3 +31,50 @@ else{
     console.log("invalid age");
     
 }
+let hour = 19;
+hour+=5;
+let nameMe = "coding meows";
+if(hour>=6 && hour<12){
+    console.log('Good Morning '+ nameMe+"!");
+     
+}
+else if(hour>=12 && hour<18){
+    console.log('Good Afternoon '+ nameMe+"!");
+}
+else{
+    console.log('Good Evening '+ nameMe+"!");
+}
+console.log("\t\t------------------------------");
+
+console.log('\t\t      WELCOME TO MY PARK!');
+console.log("\t\t------------------------------");
+let age2= 5;
+let isHoliday = false;
+
+if(((age2<=6 && age2>0)||age2>=65) && isHoliday===false){
+    console.log('Discount');
+    
+}
+
+let rnd = Math.random();
+let result=(rnd>=0.5)?'Heads':'Tails';
+let guess = 'Heads';
+if(result===guess){
+    console.log('You Win!');
+    
+
+}
+else{
+    console.log('Wrong guess');
+    
+}
+
+
+// if(rnd<=0.5){
+//     console.log('heads');
+    
+// }
+// else{
+//     console.log('Tails');
+    
+// }
