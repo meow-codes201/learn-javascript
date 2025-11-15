@@ -1,0 +1,23 @@
+.cart{
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+}
+.buy{
+    background-color: orange;
+    border: 2px solid black;
+}
+.cart:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+.cart:active{
+    background-color: darkorange;
+}
+.buy:hover{
+    background-color: rgb(235, 141, 27);
+    cursor: pointer;
+}
+.buy:active{
+    background-color: rgb(217, 101, 29);
+}
