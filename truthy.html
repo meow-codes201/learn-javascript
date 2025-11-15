@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        let val1 = "Hello";
+        if (val1) {
+            console.log(`${val1} is truthy`);
+        } else {
+            console.log(`${val1} is falsy`);
+        }
+
+        let val2 = 0;
+        if (val2) {
+            console.log(`${val2} is truthy`);
+        } else {
+            console.log(`${val2} is falsy`);
+        }
+
+        let val3 = null;
+        if (val3) {
+            console.log(`${val3} is truthy`);
+        } else {
+            console.log(`${val3} is falsy`);
+        }
+
+        let val4 = 42;
+        if (val4) {
+            console.log(`${val4} is truthy`);
+        } else {
+            console.log(`${val4} is falsy`);
+        }
+        let val5 = undefined;
+        if (val5) {
+            console.log(`${val5} is truthy`);
+        } else {
+            console.log(`${val5} is falsy`);
+        }
+
+let val6 = [];
+        if (val6) {
+            console.log(`An empty array is truthy`);
+        } else {
+            console.log(`An empty array is falsy`);
+        }
+
+
+let age=18;
+let res = (age>=18)?"You can vote":"You cannot vote";
+console.log(res);
+//GAURD OPERATORS(short-circuiting)
+false && console.log("This won't be printed");
+true || console.log("This will not be printed either");
+true && console.log("&& This will be printed");    
+false || console.log("||This will also be printed");
+
+let vowel =  undefined ||'' || 'a' || 'e'|| 'i'||'o'||'u';
+console.log(`The first truthy value is: ${vowel}`);
+
+
+    </script>
+</body>
+</html>
