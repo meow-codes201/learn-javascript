@@ -5,3 +5,22 @@
     border: 2px solid darkred;
     border-radius: 50%;
 }
+.click{
+    display: block;
+    margin-bottom: 20px;
+    
+}
+.sp{
+    display: block;
+    padding-top: 10px;
+}
+
+.cart{
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+}
+.buy{
+    background-color: orange;
+    border: 2px solid black;
+}
