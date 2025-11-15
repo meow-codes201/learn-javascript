@@ -1,3 +1,4 @@
+alert("Welcome");
 console.log("Welcome back");
 console.log("slow and steady");
 console.log("some"+ " more" +" text: " + 88);
