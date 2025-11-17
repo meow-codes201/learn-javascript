@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissors-modified</title>
+
+    <link rel="stylesheet" href="rock-paper-scissors-modified.css">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    .ttl{
+
+        font-weight: bold;
+        font-size: 30px;
+
+
+    }
+    .move-icon{
+        height: 50px;
+
+    }
+    .move-btn{
+        background-color: transparent;
+        border-radius: 50%;
+        border: 3px solid white;
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .result{
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .score{
+        margin-top: 60px;
+    }
+    .reset-btn{
+        background-color: white;
+        font-size: 20px;
+        padding: 8px 15px;
+        cursor: pointer;
+
+
+
+    }
+    </style>
+</head>
+<body>
+    
+<p class="ttl">ROCK PAPER SCISSORS</p>
+<button onclick="playGame('rock')" class="move-btn"><img class="move-icon" src="rock-emoji.png" ></button>
+<button onclick="playGame('paper')" class="move-btn"><img class="move-icon" src="paper-emoji.png"></button>
+<button onclick="playGame('scissors')" class="move-btn"><img class="move-icon" src="scissors-emoji.png" ></button>
+<!-- <button></button> -->
+<p class="result">Start</p> 
+<p class="moves"></p>
+<p class="score"></p>
+
+
+<button onclick="reset()" class="reset-btn">Reset Score</button>
+
+
+
+    <script src="rps.js"></script>
+</body>
+</html>
