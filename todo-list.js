@@ -8,12 +8,12 @@ const todoList = [
     dueDate:'2025-05-19'
 }
 ];
+
 renderTodoList()
 function renderTodoList(){
 
     let todoListHtml = [];
-    for(let i=0;i<todoList.length;i++){
-        const todoObject = todoList[i];
+    todoList.forEach(function(todoObject,i){
         const {name,dueDate}=todoObject;
         
         const htmlCode = `
@@ -26,8 +26,25 @@ function renderTodoList(){
         " class="delete-btn">Delete</button>
         `
         todoListHtml+=htmlCode;
-    }
-    console.log(todoListHtml);
+    
+    })
+    
+    // for(let i=0;i<todoList.length;i++){
+    //     const todoObject = todoList[i];
+    //     const {name,dueDate}=todoObject;
+        
+    //     const htmlCode = `
+        
+    //     <div>${name}</div>
+    //     <div>${dueDate}</div>
+    //     <button onclick="
+    //     todoList.splice(${i},1);
+    //     renderTodoList()
+    //     " class="delete-btn">Delete</button>
+    //     `
+    //     todoListHtml+=htmlCode;
+    // } 
+    // console.log(todoListHtml);
     document.querySelector(".js-todolist-div").innerHTML = todoListHtml;
     
 }
