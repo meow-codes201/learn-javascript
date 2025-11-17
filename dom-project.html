@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-project</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        
+        .sub{
+            margin-bottom: 30px;
+            background-color: black;
+            color: white;
+            border:none;
+            font-size: 16px;
+            border-radius: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        
+        }
+        .subed{
+            background-color: lightgray;
+            color: black;
+        }
+    .cost-ip{
+        font-size: 15px;
+        padding:5px;
+    }
+    .calculate{
+        background-color: green;
+        color: white;
+        font-size: 15px;
+        padding: 8px 5px;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <p class="yt">Youtube Subscribe Button</p>
+    <button class="sub" onclick="subscribe()">Subscribe</button>
+<p>Amazon Shipping Calculator</p>
+<input type="text" onkeydown="check(event)" placeholder="cost of order" class="cost cost-ip">
+<button onclick="calculate()" class="calculate" >Calculate</button>
+<p class="total"></p>
+
+
+    
+    <script src="dom-project.js"></script>
+</body>
+</html>
