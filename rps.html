@@ -41,15 +41,16 @@
     .score{
         margin-top: 60px;
     }
-    .reset-btn{
+    .reset-btn,.autoplay{
         background-color: white;
         font-size: 20px;
         padding: 8px 15px;
         cursor: pointer;
-
+        
 
 
     }
+    
     </style>
 </head>
 <body>
@@ -62,10 +63,10 @@
 <p class="result">Start</p> 
 <p class="moves"></p>
 <p class="score"></p>
-
+ 
 
 <button onclick="reset()" class="reset-btn">Reset Score</button>
-
+<button onclick="autoplay()" class="autoplay" >Autoplay</button>
 
 
     <script src="rps.js"></script>

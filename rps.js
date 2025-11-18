@@ -32,6 +32,38 @@ return computerChoice;
 // }
 // console.log(tax(2000,0.2));
 // console.log(tax(5000));
+let isAutoPlaying = false;
+let intervalId;
+
+function autoplay(){
+
+    if(!isAutoPlaying){
+        intervalId = setInterval(()=>{
+            playGame(pickCompMove())
+        },1000);
+    isAutoPlaying = true;
+    }
+    else{
+        clearInterval(intervalId);
+        isAutoPlaying = false;
+    }
+    
+}
+
+document.body.addEventListener("keydown",(event) =>{
+    if(event.key === 'r'){
+        playGame("rock");
+    }
+    else if(event.key === 'p'){
+        playGame("paper");
+    }
+    else if(event.key === 's'){
+        playGame("scissors");
+    }
+
+})
+
+
 function playGame(playerChoice){
 let computerChoice = pickCompMove();
 let result = "";
