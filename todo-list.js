@@ -13,7 +13,7 @@ renderTodoList()
 function renderTodoList(){
 
     let todoListHtml = [];
-    todoList.forEach(function(todoObject,i){
+    todoList.forEach((todoObject,i)=>{
         const {name,dueDate}=todoObject;
         
         const htmlCode = `
