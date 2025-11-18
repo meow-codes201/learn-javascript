@@ -98,7 +98,7 @@ const obj2={
     }
 };
 */
-
+/*
 const btn = document.querySelector(".js-btn");
 const eventListener = ()=>{
 ()=>{
@@ -113,3 +113,28 @@ btn.addEventListener('click',()=>{
     
 })
 btn.removeEventListener('click',eventListener);
+// */
+// let ar = [1,-3,5,9,-6];
+// ar = ar.filter((value,index)=>{
+//     /* if(value>0){
+//     return true;
+//     }
+//     else{
+//         return false;
+//     }
+//     */
+//     return value>=0;
+// });
+// console.log(ar);
+// */
+let ar1 = [2,1,3];
+ar1 = ar1.map((value,index)=>{
+    return value*2;
+})
+console.log(ar1);
+
+
+
+let ar2 = [2,1,3];
+ar2 = ar2.map((value )=>value*2);
+console.log(ar2);
