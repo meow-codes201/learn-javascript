@@ -1,5 +1,6 @@
 import { products } from "./data/products.js";
 import { cart } from "./data/cart.js";
+import { saveToStorage } from "./data/cart.js";
 let productsHTML = '';
 
 //console.log(products);
@@ -8,7 +9,7 @@ products.forEach((product)=>{
             <div class="product-container">
           <div class="product-image-container">
             <img class="product-image"
-              src=${product.image}>
+              src="${product.image}">
           </div>
 
           <div class="product-name limit-text-to-2-lines">
@@ -80,6 +81,8 @@ button.addEventListener('click',()=>{
         quantity:1
     })
     }
+    saveToStorage()
+
     let cartQuantity=0;
     cart.forEach((item)=>{
 cartQuantity += item.quantity;
