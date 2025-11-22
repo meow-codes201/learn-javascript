@@ -31,3 +31,19 @@ console.log(Meth.PI); // ACCESS THROUGH VLASS DIRECTLY
 const m1 = new Meth; // DOESNT WORK
 console.log(m1.PI); //UNDEFINED
 
+class User{
+    static users = 0;
+    constructor(username){
+        this.username = username;
+        User.users ++;
+    }
+}
+const u1 = new User(("Barbie"));
+console.log(User.users);
+const u2 = new User('just trolling '); 
+const u3 = new User('just trolling ');
+const u4 = new User('just trolling '); 
+const u5 = new User('just trolling '); 
+console.log(User.users);
+
+
