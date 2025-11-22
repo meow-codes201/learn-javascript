@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce-function</title>
+</head>
+<body>
+    <script>
+        const prices = [5,9,90,20,100];
+        const total = prices.reduce(sum);
+        function sum(acc,et){
+            return acc+et;
+        }
+        console.log(total.toFixed(2));
+
+        
+        const maximum = prices.reduce(getMax);
+
+        function getMax(acc,et){
+            return Math.max(acc,et);
+        }
+        console.log(maximum);
+        const getMin = (prev,next) => {
+            return Math.min(prev,next);
+        }
+        const minimum = prices.reduce(getMin);
+
+        
+        console.log(minimum);
+
+
+    </script>
+</body>
+</html>
