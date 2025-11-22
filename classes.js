@@ -37,6 +37,9 @@ class User{
         this.username = username;
         User.users ++;
     }
+    static getUserCount(){
+        return `there are ${User.users} no. of users`;
+    }
 }
 const u1 = new User(("Barbie"));
 console.log(User.users);
@@ -46,4 +49,4 @@ const u4 = new User('just trolling ');
 const u5 = new User('just trolling '); 
 console.log(User.users);
 
-
+console.log(User.getUserCount());
