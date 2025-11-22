@@ -18,7 +18,8 @@ class Cat extends Animal{
 class Rabbit extends Animal{
     name = 'mr. knight';
     bounce(){
-        ``
+        console.log(`${this.name} is bouncing`);
+        
     }
 }
 
@@ -28,3 +29,5 @@ console.log(c.aliive);
 // console.log(c.eat());
 c.eat();
 r.sleep();
+c.catwalk();
+r.bounce();
