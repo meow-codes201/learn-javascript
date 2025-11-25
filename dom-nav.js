@@ -44,4 +44,4 @@ Array.from(children).forEach((child)=>{
 })
 
 children[1].style.backgroundColor = 'black'
-children[1].style.color = 'white'
+children[1].style.color = 'white';
