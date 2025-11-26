@@ -10,4 +10,4 @@ fruits.prepend(newListItem);
 const orange = document.getElementById("orange");
 fruits.insertBefore(newListItem,orange);
 const banana = document.getElementById("banana");
-fruits.insertBefore(newListItem,banana)
+fruits.insertBefore(newListItem,banana);
