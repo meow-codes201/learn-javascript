@@ -1,6 +1,6 @@
 # JavaScript Learning Path - 24 Hours
 
-
+## Day 1 (6 hours)
 
 ### 1. JavaScript Fundamentals (3 hours)
 - Variables and Data Types
@@ -96,6 +96,18 @@ Each section should be followed by practical exercises to reinforce learning.
 - Quiz App
 - Notes App
 - Shopping Cart
+
+## Getting Started
+1. Create a folder for each day's content
+2. Create practice files for exercises
+3. Build projects in separate directories
+4. Use browser DevTools for debugging
+
+## How to Use This Path
+- Follow the structure day by day
+- Spend approximately 6 hours per day
+- Complete all practice exercises
+- Build at least 2-3 projects before moving forward
 
 ## Next Steps
 - Learn a Framework (React, Vue, or Angular)
