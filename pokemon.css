@@ -1,0 +1,14 @@
+button{
+    color: orange;
+    background-color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: hsl(0, 0%, 24%);
+    color: orangered;
+}
+img{
+    width: 250px;
+}
