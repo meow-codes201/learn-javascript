@@ -1,0 +1,20 @@
+#myBox{
+
+    background-color: lightblue;
+
+    width: 200px;
+    height: 200px;
+    font-size: 7.5rem;
+    /* font-weight: bold; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+
+}
+#myBtn{
+    font-size: 3rem;
+
+}
