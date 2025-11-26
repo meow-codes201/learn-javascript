@@ -1,0 +1,13 @@
+newListItem = document.createElement("li");
+newListItem.textContent = 'coconut';
+const fruits = document.getElementById("fruits");
+newListItem.id = 'coconut';
+newListItem.style.fontWeight = 'bold';
+newListItem.style.backgroundColor = 'lightgreen';
+// document.body.append(newListItem);
+fruits.append(newListItem);
+fruits.prepend(newListItem);
+const orange = document.getElementById("orange");
+fruits.insertBefore(newListItem,orange);
+const banana = document.getElementById("banana");
+fruits.insertBefore(newListItem,banana)
